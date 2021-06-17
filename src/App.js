@@ -27,7 +27,17 @@ function App() {
     ).then((res) => setLoading(false));
   }, []);
 
-  // setInterval(getWeather(location), 360000);
+  setInterval(
+    () =>
+      getWeather(
+        location,
+        setForecastDisplay,
+        setWeatherForecast,
+        setHourDisplay,
+        setWeatherHour
+      ),
+    300000
+  );
 
   return (
     // console.log(weatherForecast.forecast.forecastday, "DATAAAAAAAAAA"),
