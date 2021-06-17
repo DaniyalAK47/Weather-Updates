@@ -17,7 +17,7 @@ export default function Header({
     >
       <Grid container alignItems="center" style={{ marginTop: 10 }}>
         <Grid item xs={4} sm={5} md={6} lg={6}>
-          <Typography variant="h3">Weather Updates</Typography>
+          <Typography variant="h4">Weather Updates</Typography>
         </Grid>
 
         <Grid item xs={8} sm={7} md={6} lg={6}>

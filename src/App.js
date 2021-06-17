@@ -41,7 +41,7 @@ function App() {
         setHourDisplay={setHourDisplay}
       />
       {loading ? (
-        <CircularProgress />
+        <CircularProgress style={{ alignSelf: "center" }} />
       ) : (
         <>
           <WeatherForecast

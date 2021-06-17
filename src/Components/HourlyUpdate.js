@@ -12,7 +12,9 @@ export default function HourlyUpdate({ weatherHour, hourDisplay }) {
   return (
     <>
       {hourDisplay !== "" ? (
-        <Typography variant="h3">Hourly Updates for {hourDisplay}</Typography>
+        <Typography variant="h3" style={{ margin: 10 }}>
+          Hourly Updates for {hourDisplay}
+        </Typography>
       ) : (
         <div></div>
       )}
@@ -21,7 +23,7 @@ export default function HourlyUpdate({ weatherHour, hourDisplay }) {
         {weatherHour !== "" ? (
           weatherHour.map((val) => (
             <Grid item>
-              <Card elevation={5}>
+              <Card elevation={5} style={{ margin: 10 }}>
                 <CardContent>
                   <Typography variant="h6">
                     {moment(val.time).format("HH:mm")}

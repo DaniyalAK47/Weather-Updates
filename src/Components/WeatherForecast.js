@@ -21,7 +21,7 @@ export default function WeatherForecast({
         {weatherForecast !== "" ? (
           weatherForecast.forecast.forecastday.map((val) => (
             <Grid item>
-              <Card elevation={5}>
+              <Card elevation={5} style={{ margin: 10 }}>
                 <CardContent>
                   <Typography variant="h6">
                     {moment(val.date).format("Do MMMM YYYY")}
